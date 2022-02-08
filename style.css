@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background-color: #fff;
+}
+
+header .container {
+  margin: 0 auto;
+  padding: 0 35px;
+  max-width: 1800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: auto;
+}
+
+.header__title-img {
+  display: flex;
+  flex-direction: row;
+}
+
+#header-img {
+  width: 100%;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+header nav {
+  margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+  margin: 0 10px;
+}
+
+.nav-colored {
+  background-color: #f63854;
+}
+
+@media (max-width: 1020px) {
+  header {
+    padding: 5px;
+  }
+  header .container {
+    padding: 0 0;
+  }
+}
+@media (max-width: 880px) {
+  .header__title-img {
+    width: min-content;
+    margin: auto;
+  }
+  .nav-link {
+    margin: 10px;
+  }
+  header .container {
+    flex-direction: column;
+  }
+  #nav-bar {
+    justify-content: center;
+  }
+}
+
+main {
+  padding: 35px;
+}
+
+section {
+  margin: 50px auto;
+  max-width: 1800px;
+}
+
+.text-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+  .text-media {
+    flex-direction: column;
+    margin: auto;
+  }
+  .text-media .section__text {
+    margin: auto;
+    width: auto;
+  }
+  .text-media .section__text p {
+    margin: 0;
+  }
+  .section__media {
+    width: 100%;
+  }
+  #video {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+#about {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5em;
+}
+p {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+.section__text {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  width: auto;
+  text-align: center;
+}
+
+.section__text p {
+  margin: 50px 0;
+}
+.section__media {
+  width: 50%;
+  padding: 20px;
+}
+.section__media iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.section-card {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card {
+  width: 30%;
+  padding: 20px;
+  display: inline-block;
+  flex-direction: column;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.section-card div h3 {
+  margin: 10px 0;
+}
+
+.statistics__text {
+  padding: 30px;
+}
+
+.shape {
+  height: 2px;
+  margin: 3px auto 30px;
+  width: 100px;
+  background-color: #f63854;
+}
+
+.statistics__img {
+  width: 600px;
+  height: min-content;
+  margin: 0 auto;
+  display: block;
+}
+
+#members {
+  background-color: rgba(94, 94, 94, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#members .card {
+  background-color: white;
+  display: inline-flex;
+  flex-direction: row;
+  width: 700px;
+}
+
+#members img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.members__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 50px;
+}
+
+#members .social-media img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+#form {
+  text-align: center;
+}
+
+input {
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#submit {
+  background-color: #f63854;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 500px;
+  margin: 10px auto;
+  font-size: 1em;
+}
