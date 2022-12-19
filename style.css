@@ -223,6 +223,7 @@ h3 {
 form {
     text-align: center;
     width: 100%;
+    padding: 30px;
 }
 
 input {
@@ -242,7 +243,7 @@ label {
     justify-content: space-between;
 }
 
-#submit {
+.btn {
     background-color: #f63854;
     color: white;
     padding: 14px 20px;
@@ -311,5 +312,9 @@ label {
     .card {
         width: 100%;
         margin: 20px auto;
+    }
+    form input,
+    .btn {
+        width: 100%;
     }
 }
